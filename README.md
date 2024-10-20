@@ -9,17 +9,45 @@ What has been learnt:
 
 Contents: 
 
-Milestone 1:
+Milestone 2
+steps:
 1. firstly the random package from python's inbuilt packages was imported. This allowed me to randomly chose and object from a data structure. I.e a list.
 2. Then a list with 5 string objects, that represented 5 different fruits, was created.
 3. This was then applied to the the 'random()' function to generate a random one of said string objects.
 4. a varible 'guess' was created with an input, prompting the user to enter a letter. This input was then used for a condtional 'for' loop to ascertain if the input was correct i.e. a 1 chracter long alphabetic letter.
 
-5. guess = len(1) was used, changed corrently to len(guess) ==1
-6. both the required conditions ascertaining the char length and type, were formatted as two 'if' statments one nested under the other.
+code issues and changes:
+ - guess = len(1) was used, changed corrently to len(guess) ==1
+ - both the required conditions ascertaining the char length and type, were formatted as two 'if' statments one nested under the other.
 
    if guess.isalpha() == True:
      if len(guess) == 1:
      print(message)
    
  This lead to each being verfied serprately, leading to the condtion message not being printed as wanted. Was changed to include the operaton 'and' 
+
+ Milestone 3:
+ steps:
+
+ code issues and changes: 
+- lower intially used as lower() rather than . function.
+- check_guess initalised above the while loop, leading to the variable guess not being defined as it's local. solved by putting underneath. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
