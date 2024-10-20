@@ -1,17 +1,20 @@
 import random
+list_of_fruits = ['Apple', 'Orange', 'Banana' , 'Rasberry', 'Strawberry' ]
 
-import random
-word_list = ['Apple', 'Orange', 'Banana' , 'Rasberry', 'Strawberry' ]
+print(list_of_fruits)
 
-print(word_list) 
+random_fruit = random.choice(list_of_fruits)
 
-word = random.choice(word_list)
+print(random_fruit)
 
-print(word)
+while True:
 
-guess = input('Please choose a letter: ')
+  guess = input('Please choose a letter: ')
 
-if guess.isalpha() == True and len(guess) == 1:
-     print('Good guess!')
-else: 
-   print("Oops! That is not a valid input")
+  if guess.isalpha()  and len(guess) == 1:
+     break
+  else:
+     print("Invalid letter. Please, enter a single alphabetical character.")
+
+if guess in random_fruit
+ 

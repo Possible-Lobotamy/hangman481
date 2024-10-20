@@ -1,0 +1,51 @@
+import random
+list_of_fruits = ['apple', 'orange', 'banana' , 'rasberry', 'strawberry' ]
+random_fruit = random.choice(list_of_fruits)
+list_of_guesses = []
+
+r_fruit_chars = list(random_fruit)
+rfc_len =  len(r_fruit_chars)
+rf_let_list_small = ["_"]
+r_fruit_let_list = rf_let_list_small * rfc_len
+
+print(random_fruit)
+
+class Hangman:
+    def __init__(self, list_of_fruits, num_lives=5):
+        random_fruit = random.choice(list_of_fruits)
+        self.random_fruit = random_fruit
+        r_fruit_chars = list(random_fruit)
+        rfc_len =  len(r_fruit_chars)
+        rf_let_list_small = ["_"]
+        r_fruit_let_list = rf_let_list_small * rfc_len
+        self.r_fruit_let_list = r_fruit_let_list
+        self.num_letters = rfc_len
+        self.num_lives = num_lives 
+        self.list_of_fruits = list_of_fruits
+        self.list_of_guesses = list_of_guesses
+
+
+def check_guess(guess):
+  guess.lower()
+  
+  if guess in random_fruit:
+       print(f"Good guess! {guess} is in the word.")
+  else: 
+       print(f"Sorry, {guess} is not in the word. Try again.")
+  for let in r_fruit_chars:
+     if let == guess:
+        guess_index = r_fruit_chars.index(guess)
+        r_fruit_let_list[guess_index] = guess
+        rfc_len - 
+
+def ask_for_input():
+    while True:
+      guess = input('Please choose a letter: ')
+      if guess.isalpha() == False or len(guess) != 1:
+        print("Invalid letter. Please, enter a single alphabetical character.")
+      elif guess in list_of_guesses:
+        print("you already tried that letter!")
+      else:
+         if guess.isalpha() and len(guess) == 1:
+            check_guess(guess)
+      list_of_guesses.append(guess)
