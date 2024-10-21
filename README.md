@@ -33,6 +33,17 @@ code issues and changes:
 - lower intially used as lower() rather than . function.
 - check_guess initalised above the while loop, leading to the variable guess not being defined as it's local. solved by putting underneath. 
 
+Milestone(4)
+steps:
+
+code issues and changes:
+- problem, that each time a guess is right and a letter in the list, will replace the "_" placeholder with the letter as the index method stops at the first istance of the letter. Therefore, a word like 'Banana' with an 'n' guess would lead to '_ _ n _ _ _'. can't solve with set() as it disorders the list. solved using a for loop to iterate every letter in the word.
+
+  Milestone (5).
+  Steps:
+
+  code issues and fixes:
+  - stop the print, printing several times if the letter is present more than once, achevied by taking it out of the for loop in check_guess and having it print just if the guess is in the word list i.e. "if guess in random_fruit"
 
 
 
