@@ -44,6 +44,7 @@ code issues and changes:
 
   code issues and fixes:
   - stop the print, printing several times if the letter is present more than once, achevied by taking it out of the for loop in check_guess and having it print just if the guess is in the word list i.e. "if guess in random_fruit"
+  - when defining the play_game function to intilise the game, the varible number of lives is defined before calling the instant of the hangman class. However "number_letters" > the number of unique letters, in the random word generated, is not defined, and when used to set the conditions for game state, (L, cont, W), throws a Name error, and is not defined. No sure how to solve without defining the variable outside the class  / globally. 
 
 
 
