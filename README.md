@@ -16,11 +16,11 @@ What has been learnt:
 - not to fall behind on deadlines
 
 Contents: 
-line 21: Milestone 1 
-line 28 Milestone 2
-line 45 Milestone 3
-line 61 Milestone 4
-line 79 Milestone 5 
+Milestone 1 
+Milestone 2
+Milestone 3
+Milestone 4
+Milestone 5 
 
 
 Milestone 1, steps:
